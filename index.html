@@ -9,35 +9,36 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="header-row row-1">
-                <form class="header-col col-1" action="#">
+    <div class="container grid">
+        <div class="header grid">
+            <div class="header-row row-1 flex">
+                <form class="header-col gap-1rem col-1 flex" action="#">
                     <label for="search-bar"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960"
                             width="40">
                             <path
                                 d="M787.641-137.335 530.872-394.104q-29.899 25.866-69.407 40.061-39.508 14.196-81.773 14.196-102.098 0-172.817-70.681-70.72-70.681-70.72-171.845 0-101.165 70.681-171.908 70.68-70.744 171.992-70.744 101.311 0 172.036 70.699t70.725 171.897q0 42.301-14.385 81.839-14.385 39.539-40.538 70.692l257.179 256.103-36.204 36.46ZM379.282-390.102q80.406 0 136.229-55.962 55.823-55.961 55.823-136.372 0-80.41-55.823-136.372-55.823-55.962-136.229-55.962-80.748 0-136.81 55.962T186.41-582.436q0 80.411 56.062 136.372 56.062 55.962 136.81 55.962Z" />
-                        </svg></label>
-                    <input id="search-bar" type="text">
+                        </svg>
+                    </label>
+                    <input class="border-none" id="search-bar" type="text">
                 </form>
-                <div class="header-col col-2">
-                    <i>
+                <div class="header-col gap-1rem col-2 flex">
+                    <i class="bell pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                             <path
                                 d="M124.104-566.436q0-83.589 35.346-154.306 35.346-70.718 95.396-119.692l31.717 38.845q-51.499 42.379-81.851 102.88-30.353 60.501-30.353 132.273h-50.255Zm661.537 0q0-71.666-30.353-132.4-30.352-60.733-81.851-103.138l31.717-38.46q60.05 48.974 95.396 119.677 35.346 70.702 35.346 154.321h-50.255Zm-605.64 361.82v-50.255h72.308v-310.104q0-81.057 49.474-144.156 49.474-63.099 128.218-79.048v-21.82q0-20.769 14.615-35.384 14.615-14.616 35.384-14.616t35.384 14.616q14.615 14.615 14.615 35.384v21.82q78.744 15.949 128.218 79.048 49.474 63.099 49.474 144.156v310.104h72.308v50.255H180.001ZM480-498.769Zm0 406.46q-29.923 0-51.115-21.192-21.192-21.192-21.192-51.115h144.614q0 29.923-21.192 51.115Q509.923-92.309 480-92.309ZM302.564-254.87h354.873v-310.104q0-73.666-51.885-125.551Q553.667-742.411 480-742.411t-125.552 51.885q-51.884 51.885-51.884 125.551v310.104Z" />
                         </svg>
                     </i>
-                    <div class="profile">
-                        <div class="profile-img">
+                    <div class="profile pointer gap-1rem flex">
+                        <div class="profile-img circle flex">
                             <img src="./images/morgan.png" alt="profile-pic">
                         </div>
                         <h3>Morgan Oakley</h3>
                     </div>
                 </div>
             </div>
-            <div class="header-row row-2">
-                <div class="avatar-card">
-                    <div class="avatar-card-img">
+            <div class="header-row row-2 flex">
+                <div class="avatar-card flex">
+                    <div class="avatar-card-img circle flex">
                         <img src="./images/morgan.png" alt="profile-pic">
                     </div>
                     <div>
@@ -45,15 +46,15 @@
                         <h2>Morgan Oakely (@morgan)</h2>
                     </div>
                 </div>
-                <div class="buttons">
+                <div class="buttons gap-1rem grid">
                     <button>New</button>
                     <button>Upload</button>
                     <button>Share</button>
                 </div>
             </div>
         </div>
-        <div class="sidebar">
-            <div class="flex-align-center-1rem">
+        <div class="sidebar flex">
+            <div class="sidebar-row row-1 gap-1rem flex">
                 <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                     <path
                         d="M525.129-585.385v-234.614h294.87v234.614h-294.87ZM140.001-464.873v-355.126h294.87v355.126h-294.87Zm385.128 324.872v-355.126h294.87v355.126h-294.87Zm-385.128 0v-234.614h294.87v234.614h-294.87Z" />
@@ -61,8 +62,8 @@
                 <h2>Dashboard</h2>
             </div>
             <!-- <div class="options"> -->
-            <div class="options">
-                <div class="option rounded">
+            <div class="sidebar-row row-2 options flex">
+                <div class="option gap-1rem flex rounded">
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                             <path
@@ -71,7 +72,7 @@
                     </i>
                     <h3>Home</h3>
                 </div>
-                <div class="option rounded">
+                <div class="option gap-1rem flex rounded">
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                             <path
@@ -80,7 +81,7 @@
                     </i>
                     <h3>Profile</h3>
                 </div>
-                <div class="option rounded">
+                <div class="option gap-1rem flex rounded">
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                             <path d="M100.001-260.001v-599.998h759.998v741.535L718.461-260.001h-618.46Z" />
@@ -88,7 +89,7 @@
                     </i>
                     <h3>Messages</h3>
                 </div>
-                <div class="option rounded">
+                <div class="option gap-1rem flex rounded">
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                             <path
@@ -97,7 +98,7 @@
                     </i>
                     <h3>History</h3>
                 </div>
-                <div class="option rounded">
+                <div class="option gap-1rem flex rounded">
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                             <path
@@ -106,7 +107,7 @@
                     </i>
                     <h3>Tasks</h3>
                 </div>
-                <div class="option rounded">
+                <div class="option gap-1rem flex rounded">
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                             <path
@@ -117,7 +118,7 @@
                 </div>
             </div>
             <div class="options">
-                <div class="option rounded">
+                <div class="option gap-1rem flex rounded">
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                             <path
@@ -126,7 +127,7 @@
                     </i>
                     <h3>Settings</h3>
                 </div>
-                <div class="option rounded">
+                <div class="option gap-1rem flex rounded">
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                             <path
@@ -135,7 +136,7 @@
                     </i>
                     <h3>Support</h3>
                 </div>
-                <div class="option rounded">
+                <div class="option gap-1rem flex rounded">
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                             <path
@@ -147,14 +148,14 @@
             </div>
             <!-- </div> -->
         </div>
-        <div class="main">
+        <div class="main gap-1rem grid">
             <div class="projects">
                 <h4>Your Projects</h4>
-                <div class="cards">
-                    <div class="card rounded">
+                <div class="cards gap-1rem grid">
+                    <div class="card flex rounded">
                         <h5>Super Cool Project</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione impedit sequi amet!</p>
-                        <div class="card-icons">
+                        <div class="card-icons flex">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                                     <path
@@ -175,7 +176,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card rounded">
+                    <div class="card flex rounded">
                         <h5>Less Cool Project</h5>
                         <p>Lorem ipsum dolor, sit amet Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                             Mollitia minus minima sunt, ducimus laborum eligendi fugit dicta, eum architecto accusantium
@@ -185,7 +186,7 @@
                             repellat aperiam, harum quis
                             nihil,
                             tempora nesciunt saepe ab aliquid totam in cumque?</p>
-                        <div class="card-icons">
+                        <div class="card-icons flex">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                                     <path
@@ -206,10 +207,10 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card rounded">
+                    <div class="card flex rounded">
                         <h5>Impossible App</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia est aspernatur ea?</p>
-                        <div class="card-icons">
+                        <div class="card-icons flex">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                                     <path
@@ -230,12 +231,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card rounded">
+                    <div class="card flex rounded">
                         <h5>Easy Pessy App</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quibusdam rerum a qui
                             reiciendis
                             repudiandae officiis quaerat molestiae nihil? Esse, doloremque.</p>
-                        <div class="card-icons">
+                        <div class="card-icons flex">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                                     <path
@@ -256,11 +257,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card rounded">
+                    <div class="card flex rounded">
                         <h5>Ad Blocker</h5>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda provident, dolorem
                             accusantium sit natus illum!</p>
-                        <div class="card-icons">
+                        <div class="card-icons flex">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                                     <path
@@ -281,12 +282,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card rounded">
+                    <div class="card flex rounded">
                         <h5>Money Maker</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque accusamus velit omnis ex
                             minima
                             unde magni aperiam aut. Id obcaecati reiciendis accusantium.</p>
-                        <div class="card-icons">
+                        <div class="card-icons flex">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
                                     <path
@@ -334,8 +335,8 @@
                 <div class="trending">
                     <h4>Trending</h4>
                     <div class="trendy-items rounded">
-                        <div class="trendy-item">
-                            <div class="trendy-img tegan">
+                        <div class="trendy-item gap-1rem flex">
+                            <div class="trendy-img flex circle tegan">
                                 <img src="./images/tegan.png" alt="tegan">
                             </div>
                             <div>
@@ -343,8 +344,8 @@
                                 <p>Worl Peace Builder</p>
                             </div>
                         </div>
-                        <div class="trendy-item">
-                            <div class="trendy-img morgan">
+                        <div class="trendy-item gap-1rem flex">
+                            <div class="trendy-img flex circle morgan">
                                 <img src="./images/morgan.png" alt="morgan">
                             </div>
                             <div>
@@ -352,8 +353,8 @@
                                 <p>Super Cool Project</p>
                             </div>
                         </div>
-                        <div class="trendy-item">
-                            <div class="trendy-img kendali">
+                        <div class="trendy-item gap-1rem flex">
+                            <div class="trendy-img flex circle kendali">
                                 <img src="./images/kendali.png" alt="kendali">
                             </div>
                             <div>
@@ -361,8 +362,8 @@
                                 <p>Life Changing App</p>
                             </div>
                         </div>
-                        <div class="trendy-item">
-                            <div class="trendy-img alex">
+                        <div class="trendy-item gap-1rem flex">
+                            <div class="trendy-img flex circle alex">
                                 <img src="./images/alex.png" alt="alex">
                             </div>
                             <div>
